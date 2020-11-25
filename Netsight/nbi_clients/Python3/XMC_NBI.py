@@ -181,7 +181,8 @@ class XMC_NBI():
     #################################################################################################
     def _decode_response(self, response: str, caller: str):
         '''internal use only'''
-
+        data_out = None
+        
         self.error = False
         
         if response.status_code != requests.codes.ok:
