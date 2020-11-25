@@ -48,8 +48,8 @@ class XMC_NBI():
         logger = logging.getLogger()
 
         if not sys.version_info >= (3, 5):
-            logger.error('XMC NBI calss reqire minimum Python reelase 3.5')
-            raise Exception("XMC NBI calss reqire minimum Python reelase 3.5")
+            logger.error('XMC NBI calss require minimum Python reelase 3.5')
+            raise Exception("XMC NBI calss require minimum Python reelase 3.5")
             sys.exit(1)
         else:
             logger.debug("XMC NBI version %s" % XMC_NBI.__version__)
